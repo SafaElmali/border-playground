@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from "styled-components/macro";
 import { Grid, GridItem } from "../../Atoms/Grid";
 
 const borderList = [
@@ -18,7 +18,7 @@ const Borders = ({ borderStyles }) => {
 
   return (
     <Grid
-      templateColumns="repeat(3,minmax(200px,1fr))"
+      templateColumns="repeat(auto-fill,minmax(200px,1fr))"
       templateRows="repeat(3,minmax(200px,1fr))"
       gap="16px"
       justify="center"

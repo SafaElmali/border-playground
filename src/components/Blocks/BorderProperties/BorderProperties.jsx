@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from "styled-components/macro";
 import Box from "../../Atoms/Box";
 import BorderProperty from "./components/BorderProperty";
 import { HFlex } from "../../Atoms/Flex";

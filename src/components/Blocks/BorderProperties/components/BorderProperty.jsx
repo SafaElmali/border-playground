@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from "styled-components/macro";
 import { VFlex } from "../../../Atoms/Flex";
 import { H5 } from "../../../Atoms/Headings";
 
