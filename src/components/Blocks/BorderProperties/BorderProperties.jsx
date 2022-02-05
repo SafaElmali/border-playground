@@ -82,12 +82,6 @@ const StyledBorderProperties = styled(Box)`
   background: rgb(229, 232, 239);
 `;
 
-const BorderPropertiesContainer = styled(HFlex)`
-  @media (max-width: 768px) {
-    flex-direction: column;
-  }
-`;
-
 const Label = styled.label`
   position: relative;
   cursor: pointer;
