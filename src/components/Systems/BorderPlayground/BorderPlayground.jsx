@@ -6,8 +6,8 @@ import Borders from "../../Blocks/Borders/Borders";
 const BorderPlayground = () => {
   const [borderStyles, setBorderStyles] = useState({
     color: "rgb(0,0,0)",
-    borderWidth: "3px",
-    borderRadius: "0px",
+    borderWidth: 1,
+    borderRadius: 0,
   });
 
   return (

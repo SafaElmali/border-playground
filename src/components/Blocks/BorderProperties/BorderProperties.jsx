@@ -2,6 +2,7 @@ import styled from "styled-components";
 import Box from "../../Atoms/Box";
 import BorderProperty from "./components/BorderProperty";
 import { HFlex } from "../../Atoms/Flex";
+import Slider from "../Slider/Slider";
 
 const colorList = [
   "rgb(255,0,115)",
@@ -16,7 +17,7 @@ const colorList = [
 ];
 
 const BorderProperties = ({ borderStyles, setBorderStyles }) => {
-  const { color } = borderStyles;
+  const { color, borderWidth, borderRadius } = borderStyles;
 
   const handleBorderColorChange = (color) => {
     setBorderStyles((borderStyles) => ({
@@ -52,8 +53,20 @@ const BorderProperties = ({ borderStyles, setBorderStyles }) => {
             })}
           </HFlex>
         </BorderProperty>
-        <BorderProperty title={"Border Width"}></BorderProperty>
-        <BorderProperty title={"Border Radius"}></BorderProperty>
+        <BorderProperty title={"Border Width"}>
+          <Slider
+            setValue={setBorderStyles}
+            property={"borderWidth"}
+            propertyValue={borderWidth}
+          />
+        </BorderProperty>
+        <BorderProperty title={"Border Radius"}>
+          <Slider
+            setValue={setBorderStyles}
+            property={"borderRadius"}
+            propertyValue={borderRadius}
+          />
+        </BorderProperty>
       </HFlex>
     </StyledBorderPropertes>
   );

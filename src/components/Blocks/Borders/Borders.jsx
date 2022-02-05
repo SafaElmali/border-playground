@@ -40,13 +40,15 @@ const Borders = ({ borderStyles }) => {
 
 export default Borders;
 
-const BorderBox = styled(GridItem)`
+const BorderBox = styled(GridItem).attrs(({ borderRadius, borderWidth }) => ({
+  style: {
+    borderRadius: `${borderRadius}px`,
+    borderWidth: `${borderWidth}px`,
+  },
+}))`
   align-items: center;
-  color: ${({ color }) => color};
-  border-color: currentColor;
-  border-radius: ${({ borderRadius }) => borderRadius};
+  border-color: ${({ color }) => color};
   border-style: ${({ borderStyle }) => borderStyle};
-  border-width: ${({ borderWidth }) => borderWidth};
   display: flex;
   justify-content: center;
 `;
