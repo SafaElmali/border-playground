@@ -20,6 +20,7 @@ const Borders = ({ borderStyles }) => {
     <Grid
       templateColumns="repeat(auto-fill,minmax(200px,1fr))"
       templateRows="repeat(3,minmax(200px,1fr))"
+      autoRows={"minmax(200px,1fr)"}
       gap="16px"
       justify="center"
     >
