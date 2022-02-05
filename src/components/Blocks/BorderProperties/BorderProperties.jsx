@@ -1,8 +1,9 @@
 import styled from "styled-components/macro";
 import Box from "../../Atoms/Box";
 import BorderProperty from "./components/BorderProperty";
-import { HFlex } from "../../Atoms/Flex";
+import { HFlex, VFlex } from "../../Atoms/Flex";
 import Slider from "../Slider/Slider";
+import useWindowWidth from "../../../hooks/useWindowWith";
 
 const colorList = [
   "rgb(255,0,115)",
@@ -18,6 +19,8 @@ const colorList = [
 
 const BorderProperties = ({ borderStyles, setBorderStyles }) => {
   const { color, borderWidth, borderRadius } = borderStyles;
+  const windowWidth = useWindowWidth();
+  const RenderedComponent = windowWidth > 768 ? HFlex : VFlex;
 
   const handleBorderColorChange = (color) => {
     setBorderStyles((borderStyles) => ({
@@ -27,8 +30,8 @@ const BorderProperties = ({ borderStyles, setBorderStyles }) => {
   };
 
   return (
-    <StyledBorderPropertes>
-      <HFlex gap="24px">
+    <StyledBorderProperties>
+      <RenderedComponent gap="24px" flex={1}>
         <BorderProperty title={"Border Color"}>
           <HFlex gap="8px">
             {colorList.map((colorItem, index) => {
@@ -67,16 +70,22 @@ const BorderProperties = ({ borderStyles, setBorderStyles }) => {
             propertyValue={borderRadius}
           />
         </BorderProperty>
-      </HFlex>
-    </StyledBorderPropertes>
+      </RenderedComponent>
+    </StyledBorderProperties>
   );
 };
 
 export default BorderProperties;
 
-const StyledBorderPropertes = styled(Box)`
+const StyledBorderProperties = styled(Box)`
   padding: 1rem;
   background: rgb(229, 232, 239);
+`;
+
+const BorderPropertiesContainer = styled(HFlex)`
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
 `;
 
 const Label = styled.label`
