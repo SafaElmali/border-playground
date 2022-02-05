@@ -1,13 +1,15 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import { Fragment } from "react";
+import ReactDOM from "react-dom";
+import App from "./App";
+import GlobalStyles from './styles/GlobalStyles';
+import reportWebVitals from "./reportWebVitals";
 
 ReactDOM.render(
-  <React.StrictMode>
+  <Fragment>
+    <GlobalStyles />
     <App />
-  </React.StrictMode>,
-  document.getElementById('root')
+  </Fragment>,
+  document.getElementById("root")
 );
 
 // If you want to start measuring performance in your app, pass a function
