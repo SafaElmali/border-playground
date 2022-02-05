@@ -22,7 +22,6 @@ const Borders = ({ borderStyles }) => {
       templateRows="repeat(3,minmax(200px,1fr))"
       autoRows={"minmax(200px,1fr)"}
       gap="16px"
-      justify="center"
     >
       {borderList.map((border, index) => (
         <BorderBox
