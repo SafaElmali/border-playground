@@ -1,5 +1,5 @@
 import styled from "styled-components/macro";
-import { Grid, GridItem } from "../../Atoms/Grid";
+import { Grid, GridItem } from "components/Atoms/Grid";
 
 const borderList = [
   "solid",

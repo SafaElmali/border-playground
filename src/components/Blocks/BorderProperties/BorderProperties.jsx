@@ -1,9 +1,9 @@
 import styled from "styled-components/macro";
-import Box from "../../Atoms/Box";
 import BorderProperty from "./components/BorderProperty";
-import { HFlex, VFlex } from "../../Atoms/Flex";
-import Slider from "../Slider/Slider";
-import useWindowWidth from "../../../hooks/useWindowWidth";
+import { HFlex, VFlex } from "components/Atoms/Flex";
+import Box from "components/Atoms/Box";
+import Slider from "components/Blocks/Slider/Slider";
+import useWindowWidth from "hooks/useWindowWidth";
 
 const colorList = [
   "rgb(255,0,115)",

@@ -1,4 +1,4 @@
-import StyledSlider from "../../Atoms/Slider";
+import StyledSlider from "components/Atoms/Slider";
 
 const Slider = ({ setValue, property, propertyValue }) => {
   const handleValueChange = (event) => {

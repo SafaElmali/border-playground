@@ -1,7 +1,7 @@
 import { useState } from "react";
-import { VFlex } from "../../Atoms/Flex";
-import BorderProperties from "../../Blocks/BorderProperties/BorderProperties";
-import Borders from "../../Blocks/Borders/Borders";
+import { VFlex } from "components/Atoms/Flex";
+import BorderProperties from "components/Blocks/BorderProperties/BorderProperties";
+import Borders from "components/Blocks/Borders/Borders";
 
 const BorderPlayground = () => {
   const [borderStyles, setBorderStyles] = useState({

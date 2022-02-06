@@ -1,5 +1,5 @@
-import Container from "./components/Atoms/Container";
-import BorderPlayground from "./components/Systems/BorderPlayground/BorderPlayground";
+import Container from "components/Atoms/Container";
+import BorderPlayground from "components/Systems/BorderPlayground/BorderPlayground";
 
 const App = () => {
   return (
