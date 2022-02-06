@@ -3,7 +3,7 @@ import Box from "../../Atoms/Box";
 import BorderProperty from "./components/BorderProperty";
 import { HFlex, VFlex } from "../../Atoms/Flex";
 import Slider from "../Slider/Slider";
-import useWindowWidth from "../../../hooks/useWindowWith";
+import useWindowWidth from "../../../hooks/useWindowWidth";
 
 const colorList = [
   "rgb(255,0,115)",
