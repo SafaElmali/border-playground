@@ -9,6 +9,7 @@ const BorderPlayground = () => {
     borderWidth: 1,
     borderRadius: 0,
   });
+  
 
   return (
     <VFlex gap="16px">
