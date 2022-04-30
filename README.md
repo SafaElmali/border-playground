@@ -43,6 +43,7 @@ Users should be able to:
 - Gridbox
 - [React](https://reactjs.org/) - JS library
 - [Styled Components](https://styled-components.com/) - For styles
+- [Vite](https://github.com/vitejs/vite)
 
 ## Author
 
